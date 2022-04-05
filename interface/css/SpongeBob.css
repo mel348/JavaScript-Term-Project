@@ -1,0 +1,99 @@
+@import url('http://fonts.cdnfonts.com/css/spongebob-font-condensed');
+*{
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    background-image:url('../media/bikinibottom.png');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.center{
+    margin-left:2%;
+}
+h1{
+    display:flex;
+    font-family: 'SpongeBob Font Condensed', sans-serif;
+    font-size: 30pt;
+    color: #f5e949;
+    text-align: center;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+h2{
+    font-family: 'SpongeBob Font Condensed', sans-serif;
+    font-size: 18pt;
+    color: #ffffff;
+    background-color: #af8a61;
+    border: #fff229;
+    border-style:dashed;
+    border-width: 3px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    width: 60%;
+    text-align: center;
+    margin-top: -5%;
+    margin-left: 10%;
+}
+#dnd{
+    display: flex;
+    font-family: 'SpongeBob Font Condensed', sans-serif;
+    font-size: 12pt;
+    background-color: #ce1642;
+    border-color: #af8a61;
+    border-width: 5px;
+    border-radius: 5px 5px 5px 5px;
+    border-style:ridge;
+    margin-left: 17%;
+    margin-top: 10%;
+}
+#tictactoe{
+    display: flex;
+    font-family: 'SpongeBob Font Condensed', sans-serif;
+    font-size: 12pt;
+    background-color: #4d91d1;
+    border-color: #af8a61;
+    border-width: 5px;
+    border-radius: 5px 5px 5px 5px;
+    border-style:ridge;
+    margin-left: 18%;
+    margin-top: 5%;
+}
+#simon{
+    display: flex;
+    font-family: 'SpongeBob Font Condensed', sans-serif;
+    font-size: 12pt;
+    background-color: #fff229;
+    border-color: #af8a61;
+    border-width: 5px;
+    border-radius: 5px 5px 5px 5px;
+    border-style:ridge;
+    margin-left: 22%;
+    margin-top: 5%;
+}
+button:hover{
+    padding: 10px;
+}
+#content{
+    position: fixed;
+}
+footer{
+    font-family: 'SpongeBob Font Condensed', sans-serif;
+    font-size: 8pt;
+    color: black;
+    background-color: ivory;
+    opacity: .8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding:1px 1px 1px 1px;
+    text-align: left;
+}

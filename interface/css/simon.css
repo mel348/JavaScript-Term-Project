@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+}
+p{
+    display: flex;
+    font-family: 'SpongeBob Font Condensed', sans-serif;
+    font-size: 12pt;
+    color: #ffffff;
+    background-color: #af8a61;
+    border: #fff229;
+    border-style:dashed;
+    border-width: 5px;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    padding: 1%;
+    width: 30%;
+}   

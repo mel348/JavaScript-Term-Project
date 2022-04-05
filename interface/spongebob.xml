@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spongeBob>
+    <game>
+        <name>Drop N' Drag</name>
+    </game>
+    <game>
+        <name>Tic-Tac-Toe</name>
+    </game>
+    <game>
+        <name>Simon</name>
+    </game>
+</spongeBob>

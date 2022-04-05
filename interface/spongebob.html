@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SpongeBob SquarePants Games</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="http://fonts.cdnfonts.com/css/spongebob-font-condensed" rel="stylesheet">
+<link rel="stylesheet" href="../interface/spongebob.css" />	
+</head><img src = "../interface/media/SpongeBob.png"/>
+<body>
+	<article class="grid-container">
+	<header class="title">
+		
+  <section class="content">
+    <h1>Choose a Game</h1>
+    <p class="box tip"> 	  
+		<a href="dnd.html">
+			<button id="dnd">Drag N' Drop</button></a>
+		<a href="tictactoe.html">
+			<button id="tictactoe">Tic-Tac-Toe</button></a> 
+		<a href="simon.html">
+			<button id="simon">Simon</button></a>
+	  </p>
+</section></header></article>
+<script>
+    var myCollection = document.getElementById("load");
+    myCollection.addEventListener("click", function() {
+        var xhttp=new XMLHttpRequest();
+        xhttp.onreadystatechange=function() {
+            if (xhttp.readyState==4 && xhttp.status==200)
+                {
+                    xmlDoc=xhttp.responseXML;
+                    var txt="<table style='border:0'><tr><th>game</th>";
+                    var g=xmlDoc.getElementsByTagName("game");
+                    for (var i=0;i<n.length;i++)
+                        {
+                            txt=txt + "<tr><td>";
+                            txt=txt + g[i].childNodes[0].nodeValue + "</td><td>";
+                        }
+                    txt = txt + "</table>";    
+                    document.getElementById("spongebob").innerHTML=txt;
+                    document.getElementById("load").style.visibility='hidden';
+                }
+        }
+        xhttp.open("GET","spongebob.xml",true);
+        xhttp.send();
+    });
+	</script>
+<footer>Created by Mel Eman @ 2022</footer>
+</body>
+</html>
