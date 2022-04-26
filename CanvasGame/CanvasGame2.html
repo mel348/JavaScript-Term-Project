@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="http://fonts.cdnfonts.com/css/spongebob-font-condensed" rel="stylesheet">
+<style>                                                                                        /*it was easier to include the CSS in the HTML file.*/
+body{                                                                              
+    background-image: url('./media/living2.jpg');
+    background-size: cover; 
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    }
+canvas {
+    display: inline;
+    border: 10px solid #ac8960;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    }
+p{
+    font-size: 25pt;
+    font-family: 'SpongeBob Font Condensed', sans-serif;   
+    color: #fdf12c;
+    width: 680px;
+    text-align: center;
+    margin-left: 33%;
+    }
+button{
+    background-color: #F86634; 
+    border: 3px solid #fdf12c;
+    padding: 1% 1%;
+    margin: 2px;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 5%;
+    }
+button:hover{
+        background-color: #fdf12c;
+        color: 	black;;
+    }
+div{
+        width: 100%;
+        text-align: center;
+        margin-top: 750px;
+    }
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 2em;
+}
+</style>
+</head>
+
+<body onload="startGame()">                                                         
+   
+<p>Help Gary Get His Food!!</p>
+    <button id="start" onclick="location=URL" >Start</button>
+    <button id="playAgain" onclick="location=URL">Play Again</button>
+</div>
+
+<script src = "js/CanvasGame2.js"></script>
+</body>
+<footer>
+    <a href="../CanvasGame/readme.txt">Instructions</a>
+</footer>
+</html>
